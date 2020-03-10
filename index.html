@@ -19,8 +19,8 @@
         color: #191a1a;
         background-color: #ffffff;
         font-family: "Inter", -system-ui, -apple-system, sans-serif;
-        font-size: 1.125rem;
-        line-height: 1.75rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
       }
       body * {
         box-sizing: border-box;
@@ -29,13 +29,13 @@
       h1,
       h2,
       li {
-        margin: 1.75rem 0;
+        margin: 1.5rem 0;
       }
       h1 {
         font-size: 1.75rem;
       }
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
       }
       h1:first-child,
       h2:first-child {
@@ -54,7 +54,7 @@
       body > * {
         flex: none;
         margin: 0;
-        padding: 1.75rem;
+        padding: 1.5rem;
         width: 100%;
       }
       header {
@@ -62,42 +62,57 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0.5rem 1.75rem;
+        padding: 0.5rem 1.5rem;
         border-bottom: 2px solid rgb(176, 180, 181);
       }
       header svg {
         width: 10.5rem;
         max-width: 45vmin;
-        max-width: calc(50vmin - 3.5rem);
+        max-width: calc(50vmin - 3rem);
         height: auto;
       }
       main {
         flex: 1;
         margin: 0 auto;
-        max-width: 56rem;
+        max-width: 54rem;
       }
       aside {
         background-color: #dae9f1;
       }
       aside .related-links {
         margin: 0 auto;
-        max-width: 52.5rem;
-        padding: 1.75rem 0;
+        max-width: 51rem;
+        padding: 1.5rem 0;
         list-style: none;
         column-width: 16rem;
         column-count: 2;
-        column-gap: 1.75rem; 
+        column-gap: 1.5rem; 
       }
       aside .related-links li {
         break-inside: avoid;
-        margin: 0 0 1.75rem;
+        margin: 0 0 1.5rem;
       }
       aside .related-links a {
         font-weight: 700;
       }
       footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1.5rem;
         color: #ffffff;
         background-color: #4298b5;
+      }
+      footer .footer-logo svg {
+        width: 20vw;
+        max-width: 7.5rem;
+        min-width: 6rem;
+        height: auto;
+        margin: 1.5rem auto;
+      }
+      footer .footer-copyright {
+        font-size: 0.875rem;
+        padding-left: 1.5rem;
       }
     </style>
   </head>
@@ -261,8 +276,8 @@
       <ul class="related-links">
         <li><a href="https://www.mprnews.org/politics/election-2020">Get full election coverage</a></li>
         <li><a href="https://www.mprnews.org/politics">Follow our politics coverage</a></li>
-        <li><a href="https://www.mprnews.org/newsletter">Get the latest news in your inbox</a></li>
-        <li><a href="https://www.mprnews.org/election2020/calendar">Keep up to date with our downloadable election calendar</a></li>
+        <li><a href="https://www.mprnews.org/newsletter">Get the latest news in your&nbsp;inbox</a></li>
+        <li><a href="https://www.mprnews.org/election2020/calendar">Keep up to date with our downloadable election&nbsp;calendar</a></li>
         <li><a href="https://www.mprnews.org/can-you-believe-it">Can You Believe It?</a><br />
           Our disinformation detectives are working to find facts when when entities knowingly spread false information intended to mislead. This team will also offer methods that voters can employ to combat the spread of disinformation.</li>
       </ul>
@@ -270,7 +285,7 @@
     <footer>
       <a
         href="https://www.mpr.org/"
-        class="footer_logo"
+        class="footer-logo"
         aria-label="Minnesota Public Radio"
       >
         <svg
@@ -403,6 +418,6 @@
           </g>
         </svg>
       </a>
-    </footer>
-  </body>
+      <div class="footer-copyright">&copy;&nbsp;2020 Minnesota&nbsp;Public&nbsp;Radio. All&nbsp;rights&nbsp;reserved.</div>
+    </body>
 </html>
